@@ -78,9 +78,9 @@ sx={{
           }}
         >
           <Header />
-          <Timer 
+          {/* <Timer 
           showResult={showResult}
-          setShowResult={setShowResult} />
+          setShowResult={setShowResult} /> */}
           <QA
             question={question}
             setQuestion={setQuestion}

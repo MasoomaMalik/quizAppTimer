@@ -29,13 +29,13 @@ const QA = ({
       <Box sx={{}}>
         <Grid
           container
-          sx={{ marginY: 1, display: "flex", justifyContent: "space-between"
+          sx={{  display: "flex", justifyContent: "space-between"
         
         
         }}
         >
           <Typography
-            variant="h5"
+            variant="h6"
             sx={{
               fontWeight: "500",
             }}
@@ -44,7 +44,7 @@ const QA = ({
             {index + 1}/{question.length}
           </Typography>
           <Typography
-            variant="h5"
+            variant="h6"
             sx={{
               fontWeight: "500",
             }}
@@ -57,9 +57,9 @@ const QA = ({
         {/*  mapping questions*/}
 
         <Typography
-          variant="h5"
+          variant="h6"
           sx={{
-            marginY: 3,
+            marginY: 1.5,
             fontWeight: "400",
           }}
         >
@@ -72,7 +72,8 @@ const QA = ({
             padding: 1.5,
             display: "flex",
             alignContent: "space-between",
-            flexDirection: { sm: "column", md: "row" },
+            flexDirection: { sm: "row",xs:'column', md: "row" },
+
             justifyContent: "center",
           }}
         >
@@ -84,9 +85,8 @@ const QA = ({
               lg={6}
               sx={{
                 display: "flex",
-                flexDirection: { sm: "column", md: "row" },
                 justifyContent: "center",
-                
+
               }}
             >
               <Chip
@@ -97,9 +97,13 @@ const QA = ({
                   clicked && x == question[index].answer ? "success" : "primary"
                 }
                 sx={{
-                  margin: { lg: 1, md: 0.5, sm: 0.5, xs: 0.5 },
-                  padding: { lg: 2.5, md: 1.5, sm: 1.5, xs: 1.5 },
-                  fontSize: "1rem",
+                  margin: { lg: 1.5, md: 1,},
+                    // 
+                    // sm: 0.5, xs: 0.5 },
+                  padding: { lg: 4, md: 2},
+                    
+                    // sm: 1.5, xs: 1.5 },
+                  fontSize: "1.5rem",
                   width: {lg:"80%",md:"80%",sm:"80%",xs:"80%"},
                 }}
                 onClick={() => check(x, question[index].answer)}
