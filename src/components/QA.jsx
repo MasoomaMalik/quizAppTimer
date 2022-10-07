@@ -35,17 +35,21 @@ const QA = ({
         }}
         >
           <Typography
-            variant="h6"
+            // variant="h6"
             sx={{
               fontWeight: "500",
+            fontSize: {md:"1rem",sm:"0.5",xs:"0.25"},
+              
             }}
           >
             Question#
             {index + 1}/{question.length}
           </Typography>
           <Typography
-            variant="h6"
+            // variant="h6"
             sx={{
+            fontSize: {md:"1rem",sm:"0.5",xs:"0.25"},
+
               fontWeight: "500",
             }}
           >
@@ -57,10 +61,12 @@ const QA = ({
         {/*  mapping questions*/}
 
         <Typography
-          variant="h6"
+          // variant="h6"
           sx={{
             marginY: 1.5,
             fontWeight: "400",
+            // fontSize: {md:"1rem",sm:"0.5",xs:"0.25"},
+
           }}
         >
           {question[index].question}
@@ -97,13 +103,13 @@ const QA = ({
                   clicked && x == question[index].answer ? "success" : "primary"
                 }
                 sx={{
-                  margin: { lg: 1.5, md: 1,},
+                  margin: { lg: 1.5, md: 1.5,sm:1, xs:1,},
                     // 
                     // sm: 0.5, xs: 0.5 },
-                  padding: { lg: 4, md: 2},
+                  padding: { lg: 4, md: 2,sm:2,xs:2},
                     
                     // sm: 1.5, xs: 1.5 },
-                  fontSize: "1.5rem",
+                  fontSize: {md:"1.5rem",sm:"1"},
                   width: {lg:"80%",md:"80%",sm:"80%",xs:"80%"},
                 }}
                 onClick={() => check(x, question[index].answer)}
