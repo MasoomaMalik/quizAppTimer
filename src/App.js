@@ -67,14 +67,14 @@ sx={{
 >
         <Grid item
           sx={{
-            margin:3,
+            margin:{md:3,sm:0.25},
             border: 2,
             borderRadius: 10,
             height: "90vh",
             width: "60vw"
             , color:'black',
             backgroundColor:'white',
-            padding:6
+            padding:{md:6,sm:1}
           }}
         >
           <Header />
