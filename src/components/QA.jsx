@@ -29,7 +29,10 @@ const QA = ({
       <Box sx={{}}>
         <Grid
           container
-          sx={{ marginY: 2, display: "flex", justifyContent: "space-between" }}
+          sx={{ marginY: 1, display: "flex", justifyContent: "space-between"
+        
+        
+        }}
         >
           <Typography
             variant="h5"
@@ -65,7 +68,8 @@ const QA = ({
         <Grid
           container
           sx={{
-            padding: 3,
+
+            padding: 1.5,
             display: "flex",
             alignContent: "space-between",
             flexDirection: { sm: "column", md: "row" },
@@ -82,6 +86,7 @@ const QA = ({
                 display: "flex",
                 flexDirection: { sm: "column", md: "row" },
                 justifyContent: "center",
+                
               }}
             >
               <Chip
@@ -92,10 +97,10 @@ const QA = ({
                   clicked && x == question[index].answer ? "success" : "primary"
                 }
                 sx={{
-                  margin: { lg: 2, md: 1, sm: 1, xs: 1 },
-                  padding: { lg: 5, md: 3.5, sm: 3, xs: 3 },
-                  fontSize: "1.5rem",
-                  width: "80%",
+                  margin: { lg: 1, md: 0.5, sm: 0.5, xs: 0.5 },
+                  padding: { lg: 2.5, md: 1.5, sm: 1.5, xs: 1.5 },
+                  fontSize: "1rem",
+                  width: {lg:"80%",md:"80%",sm:"80%",xs:"80%"},
                 }}
                 onClick={() => check(x, question[index].answer)}
               />
@@ -112,8 +117,8 @@ const QA = ({
               endIcon={<SendIcon />}
               sx={{
                 backgroundColor: pink[500],
-                marginY: 2,
-                padding: 2,
+                marginY: 1,
+                padding: 1,
                 borderRadius: 20,
                 paddingX: 3,
               }}
